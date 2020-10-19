@@ -14,6 +14,9 @@
         font-size: 300%;
         margin: auto;
         background-image: linear-gradient(lightBlue,dodgerBlue);
+        visibility: hidden;
+        opacity: 0;
+        animation: button 1s linear;
       }
       
       a{
@@ -57,6 +60,10 @@
       
       @keyframes three{
         100%{opacity: 1;}
+      }
+      
+      @keyframes button{
+        100%{opacity: 1; visibility: visible;}
       }
     </style>
   </head>
