@@ -37,11 +37,16 @@
     </style>
   </head>
   <body>
-  
-  <h1>Win the war?</h1>
-  
-  <button id="yes" type="button" onclick="one()">YES</button>
-  <button id="no" type="button" onclick="two()">NO</button>
-  
+    
+    <h1 id="h1">Win the war?</h1>
+    
+    <button id="yes" type="button" onclick="one()">YES</button>
+    <button id="no" type="button" onclick="two()">NO</button>
+    
+    <script>
+      function one(){
+        document.getElementById("h1").innerHTML="You won the war and lived happily ever after!
+      }
+    </script>
   </body>
 </html>
