@@ -20,11 +20,50 @@
       color: black;
       text-decoration: none;
       }
+      
+      h1{
+      margin-top: 20px;
+      }
+      
+      h1#one{
+      animation: one 1s linear;
+      animation-delay: 4s;
+      }
+      
+      h1#twoThree{
+      animation: two 1s linear;
+      animation-delay: 4s;
+      animation: twoPFive 1s linear;
+      animation-delay: 8s;
+      }
+      
+      h1#threeFour{
+      animation: three 1s linear;
+      animation-delay: 8s;
+      }
+      
+      @keyframes one{
+      100%{opacity: 0; display: none;}
+      }
+      
+      @keyframes two{
+      100%{opacity: 1;}
+      }
+      
+      @keyframes twoPFive{
+      100%{opacity: 0; dispay: none;}
+      }
+      
+      @keyframes three{
+      100%{opacity: 1;}
+      }
     </style>
   </head>
   <body>
     
-    <h1>Once upon a time...</h1>
+    <h1 id="one">Once upon a time...</h1>
+    <h1 id="twoThree">There was a big war against you castle..</h1>
+    <h1 id="threeFour">You were doing good, but you could choose to loose anyway.</h1>
     
     <button type="button"><a href="stage2.html">Continue</a></button>
     
