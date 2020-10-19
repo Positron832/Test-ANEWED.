@@ -24,6 +24,7 @@
       h1{
         margin-top: 20px;
         animation-fill-mode: forwards;
+        position: relative;
       }
       
       h1#one{
@@ -33,13 +34,13 @@
       
       h1#two{
         opacity: 0;
-        animation: two 8s linear;
+        animation: two 4s linear;
         animation-delay: 4s;
       }
       
       h1#three{
         opacity: 0;
-        animation: three 1s linear;
+        animation: three 4s linear;
         animation-delay: 8s;
       }
       
@@ -48,8 +49,8 @@
       }
       
       @keyframes two{
-        12.5%{opacity: 1;}
-        87.5%{opacity: 1;}
+        25%{opacity: 1;}
+        75%{opacity: 1;}
         100%{opacity: 0;}
       }
       
