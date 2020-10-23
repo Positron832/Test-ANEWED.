@@ -6,7 +6,7 @@
     <style>
       body{
         font-family: serif;
-        background-image: linear-gradient(to right,lightBlue,dodgerBlue);
+        background-image: linear-gradient(to right, lightBlue, dodgerBlue);
       }
       
       button{
@@ -15,11 +15,15 @@
       }
       
       button#yes{
-        background-image: linear-gradient(lightGreen,green);
+        background-image: linear-gradient(lightGreen, green);
       }
       
       button#no{
-        background-image: linear-gradient(red,darkRed);
+        background-image: linear-gradient(red, darkRed);
+      }
+      
+      button#continue{
+        background-image: linear-gradient(lightGrey, grey);
       }
       
       h1{
@@ -42,16 +46,20 @@
     
     <button id="yes" type="button" onclick="one()">YES</button>
     <button id="no" type="button" onclick="two()">NO</button>
+    <button id="continue" type="button" style="display: none;"><a href="stage3.html">Continue</a></button>
     
     <script>
       function one(){
         document.getElementById("h1").innerHTML="You won the war and lived happily ever after!";
+        document.getElementById("yes").style.display="none";
         document.getElementById("no").style.display="none";
       }
       
       function two(){
         document.getElementById("h1").innerHTML="You lost the war and had to flee to France..";
         document.getElementById("yes").style.display="none";
+        document.getElementById("no").style.display="none";
+        document.getElementById("continue").style.display="block";
       }
     </script>
   </body>
