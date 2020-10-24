@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test: ANEWED</title>
+    <meta charset="UTF-8"/>
+    <!--meta viewport thingy-->
+    <style>
+      body{
+        background-image: linear-gradient(deepSkyBlue, dodgerBlue, blue, green);
+        text-align: center;
+        text-decoration: none;
+        font-family: serif;
+        color: black;
+      }
+      
+      h1{
+        font-size: 500%;
+        animation: animation1 2s linear;
+      }
+      
+      button{
+        font-size: 300%;
+        padding: 15px;
+        margin: auto;
+        background-image: linear-gradient(lightGrey, darkGrey);
+        transition: transform 0.5s ease-out, width 0.5s ease-out, height 0.5s ease-out;
+      }
+      
+      button:hover{
+       transition: rotate(10deg);
+       width: 200%;
+       height: 75%;
+     }
+      
+      @keyframes animation1{
+        50%{color: grey;}
+      }
+    </style>
+  </head>
+  <body>
+    
+    <h1>Test: ANEWED.</h1>
+    
+    <button type="button">START</button>
+    
+  </body>
+</html>
