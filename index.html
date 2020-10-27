@@ -20,7 +20,12 @@
       
       h1{
         font-size: 5vw;
-        animation: animation1 4s infinite linear;
+        animation: animation1 4s infinite alternate;
+        background-image(to right, black, yellow, green);
+        background-size: 400%;
+        background-position: left;
+        background-clip: text;
+        color: transparent;
       }
       
       p{
@@ -44,7 +49,8 @@
      }
       
       @keyframes animation1{
-        50%{color: grey;}
+        0%{background-position: left;}
+        100%{background-position: right;}
       }
     </style>
   </head>
