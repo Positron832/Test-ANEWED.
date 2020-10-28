@@ -33,11 +33,13 @@
     
     <h1 id="text1">When you arrived at France, you bought a small old house with your last golden coins.</h1>
     
-    <button id="button1" type="button" onclick="one()">Text.</button>
-    <button id="button2" type="button" onclick="document.location='stage4.html'">
+    <button id="button1" type="button" onclick="one()">And?</button>
+    <button id="button2" type="button" onclick="document.location='stage4.html'" style="display: none;">Go to le magasin.</button>
     
     <script>
       function one(){
+        document.getElementById("button1").style.display="none";
+        document.getElementById("button2").style.display="block";
         document.getElementById("text1").innerHTML="And now you have to learn French and their culture in order to be accepted by ze Francais personnes, but first you must buy baguettes of fine quality.";
       }
     </script>
