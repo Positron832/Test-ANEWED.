@@ -22,7 +22,7 @@
         font-size: 10vw;
         animation: animation1 5s infinite linear alternate;
         transform: rotateY(20deg);
-        background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+        background-image: linear-gradient(to right, #ff0000, transparent, #00ff00);
         background-size: 400%;
         background-position: left;
         border-radius: 25%;
@@ -59,7 +59,7 @@
       
       @keyframes animation1{
         0%{background-position: left; transform: rotateY(20deg);}
-        100%{background-position: right; transform: rotateY(40deg);}
+        100%{background-position: right; transform: rotateY(60deg);}
       }
       
       @keyframes animation2{
