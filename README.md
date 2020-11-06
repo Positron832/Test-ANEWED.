@@ -3,5 +3,5 @@ A small game, to play it download the code as a .zip and open it with a browser 
 ## If you edit in this repoitory:
 * Use two space indentation,
 * Use strict mode for JavaScript,
-* Always close open elements,
+* Always close empty elements,
 * Never skip optional elements like ```<!DOCTYPE html>```, and ```<head>```
