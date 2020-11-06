@@ -24,6 +24,7 @@
         box-shadow: 9px 9px 4.5px rgba(0,0,0,0.25);
         border: 2px black solid;
         transition: border-color 0.5s, box-shadow 0.5s linear;
+        background-image: linear-gradient(lightGrey, grey);
       }
       
       button:hover{
@@ -42,7 +43,16 @@
       }
       
       button#continue{
-        background-image: linear-gradient(lightGrey, grey);
+        margin: auto;
+      }
+      
+      button#backToNG{
+        display: none;
+        margin: auto;
+      }
+      
+      button#restart{
+        display: none;
         margin: auto;
       }
       
@@ -67,11 +77,16 @@
     <button id="no" type="button" onclick="two()">NO</button>
     <button id="continue" type="button" style="display: none;" onclick="document.location='stage3.html'">Continue</button>
     
+    <button id="backToNG" type="button" onclick="">Back to NG</button>
+    <button id="restart" type="button" onclick="document.location='stage1.html'">Restart</button>
+    
     <script>
       function one(){
         document.getElementById("h1").innerHTML="You won the war and lived happily ever after!";
         document.getElementById("yes").style.display="none";
         document.getElementById("no").style.display="none";
+        document.getElementById("backToNG").style.display="block";
+        document.getElementById("restart").style.display="block";
         document.getElementById("b").style.backgroundImage="radial-gradient(circle, lightBlue, dodgerBlue)";
       }
       
