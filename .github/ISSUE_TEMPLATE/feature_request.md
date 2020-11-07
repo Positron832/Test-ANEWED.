@@ -7,8 +7,8 @@ assignees: ''
 
 ---
 
-**What you want**
-What feature do you want?
+**What you want:**
+*What feature do you want?*
 
-**Suggestions on how to add it**
-With JavaScript? HTML? CSS? How?
+**Suggestions on how to add it:**
+*With JavaScript? HTML? CSS? How?*
